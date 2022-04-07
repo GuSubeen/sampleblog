@@ -7,7 +7,7 @@ set -e
 git pull
 git add -A
 git commit -m "$1 $2 $3 --all.sh main"
-git push origin master
+git push origin main
 
 # 문서를 build하여 html로 만든다
 yarn build

@@ -13,7 +13,7 @@ git push origin main
 yarn build
 
 # build가 output된 폴더로 이동한다.
-cd /public
+cd ./public
 
 # git init, commit, push
 git init

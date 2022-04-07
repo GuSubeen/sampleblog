@@ -7,7 +7,7 @@ jobs: # 이 작업을 수행한다.
 
     steps: # 작업순서(단계적으로 동작)
     - name: Checkout
-      uses: actions/checkout@main # action시 브랜치 이동
+      uses: actions/checkout@master # action시 브랜치 이동
   
     - name: Deploy # 작업이름
       uses: jenkey2011/vuepress-deploy@1.8.1 # 1.0.1은 master로 에러나는듯

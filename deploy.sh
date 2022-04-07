@@ -16,6 +16,7 @@ yarn build
 cd ./public
 
 # git init, commit, push
+git pull
 git init
 git add -A
 git commit -m 'deploy with vuepress'

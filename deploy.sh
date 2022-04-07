@@ -13,9 +13,9 @@ git push origin main
 yarn build
 
 # build가 output된 폴더로 이동한다.
-cd public
+cd ../public
 
-# 배포파일 git init, commit, push
+# 배포파일 git init, commit, push!
 git init
 git add -A
 git commit -m 'deploy with vuepress'

@@ -3,7 +3,7 @@
 # 오류 발생시 중단한다.
 set -e
 
-# main에 소스코드 pull, commit, push
+# pull, commit, push
 git pull
 git add -A
 git commit -m "$1 $2 $3 --all.sh main"
@@ -13,9 +13,9 @@ git push origin main
 yarn build
 
 # build가 output된 폴더로 이동한다.
-cd ../public
+cd public
 
-# 배포파일 git init, commit, push!
+# git init, commit, push
 git init
 git add -A
 git commit -m 'deploy with vuepress'

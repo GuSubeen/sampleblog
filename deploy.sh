@@ -16,7 +16,7 @@ set -e
 # cd .publi
 
 # git init, commit, push
-git init
+#git init
 git add .
 git commit -m 'deploy with vuepress'
 

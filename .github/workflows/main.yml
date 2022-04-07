@@ -10,7 +10,7 @@ jobs: # 이 작업을 수행한다.
       uses: actions/checkout@master # action시 브랜치 이동
   
     - name: Deploy # 작업이름
-      uses: jenkey2011/vuepress-deploy@1.8.1 # 1.0.1은 master로 에러나는듯
+      uses: jenkey2011/vuepress-deploy@v1.8.1 # 여기가 문제인 듯 하다
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: yarn && yarn build

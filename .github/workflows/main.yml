@@ -1,7 +1,5 @@
 name: Build and Deploy
-on: 
-  push:
-    branches: [main]
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: yarn && yarn build
         TARGET_BRANCH: gh-pages
-        BUILD_DIR: ./public
+        BUILD_DIR: /public
  

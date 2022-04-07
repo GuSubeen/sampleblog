@@ -1,17 +1,19 @@
 name: Build and Deploy
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+on: [push] # push 이벤트 발생시
 
-    - name: Deploy Build Files
+jobs: # 이 작업을 수행한다. 
+  build-and-deploy: # 작업이름: build-and-deploy
+    runs-on: ubuntu-latest # 일반적으로 우분투에서 실행되나 node환경도 추가가능
+
+    steps: # 작업순서
+    - name: Checkout
+      uses: actions/checkout@main # action시 브랜치 이동
+  
+    - name: Deploy # 작업이름
       uses: jenkey2011/vuepress-deploy@1.0.1
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: yarn && yarn build
         TARGET_BRANCH: gh-pages
-        BUILD_DIR: /public
+        BUILD_DIR: build/
  

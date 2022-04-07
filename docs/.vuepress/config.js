@@ -1,5 +1,5 @@
 module.exports = {
-  // base:'/',
+  base:'/blog/',
   locales:{// 언어설정
     '/': {
       lang: 'ko-KR' //한국어

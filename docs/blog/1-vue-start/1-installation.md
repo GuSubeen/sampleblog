@@ -9,6 +9,7 @@ categories:
 ---
 ## Vuepress란?
 Vuepress란 "Vue를 기반으로 하는 정적 사이트 생성기"이다.
+샘플샘플
 
 ### 정적사이트(Static Site)
 정적사이트(Static Site)란 HTML, CSS, Javascript로만 만들어진 사이트를 의미한다. 서버(Web Server)는 사용자의 요청(Request)에 해당하는 **미리 저장된 파일**(HTML, 이미지, Javascript 등)을 그대로 전달하기 때문에 작성/수정/삭제 등은 불가능하며 페이지조회만 가능하다. 

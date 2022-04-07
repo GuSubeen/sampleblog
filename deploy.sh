@@ -20,7 +20,7 @@ git init
 git add -A
 git commit -m 'deploy with vuepress'
 
-git push -f https://github.com/GuSubeen/blog.git main:gh-pages
+git push -f https://github.com/GuSubeen/blog main:gh-pages
 
 cd -
 

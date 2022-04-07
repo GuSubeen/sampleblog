@@ -7,7 +7,7 @@ set -e
 git pull
 git add -A
 git commit -m "$1 $2 $3 --all.sh main"
-git push origin main
+git push origin master
 
 # 문서를 build하여 html로 만든다
 yarn build
@@ -20,7 +20,7 @@ git init
 git add -A
 git commit -m 'deploy with vuepress'
 
-git push -f https://github.com/GuSubeen/sampleblog.git main:gh-pages
+git push -f https://github.com/GuSubeen/sampleblog.git master:gh-pages
 
 cd -
 

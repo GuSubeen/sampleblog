@@ -1,0 +1,17 @@
+{
+  "name": "sampleblog",
+  "version": "1.0.0",
+  "author": "구수빈",
+  "scripts": {
+    "dev": "vuepress dev docs --host \"localhost\"",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "1.8.2",
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "this is sample",
+  "dependencies": {
+    "next-redux-wrapper": "^7.0.5"
+  }
+}

@@ -4,6 +4,7 @@
 set -e
 
 # pull, commit, push
+git init
 git pull
 git add -A
 git commit -m "$1 $2 $3 --all.sh main"

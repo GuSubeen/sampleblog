@@ -15,7 +15,7 @@ yarn build
 # build가 output된 폴더로 이동한다.
 cd docs/.vuepress/dist
 
-# git init, commit, push
+# 배포파일 git init, commit, push
 git init
 git add -A
 git commit -m 'deploy with vuepress'

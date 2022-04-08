@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 module.exports = {
   base:'/sampleblog/',
   locales:{// 언어설정
@@ -19,26 +21,23 @@ module.exports = {
       { text: '게시판', link: '/notice/', icon: 'reco-tongzhi'},
       { text: '블로그',link: '/blog/', icon: 'reco-document',
         items: [
-          { text: '뷰프레스 시작하기', link: '/blog/1-vue-start/' },
-          { text: '뷰프레스 수정하기', link: '/blog/2-vue-customizing/' },
-          { text: '해결할 문제들', link: '/blog/3-vue-issue/' }
+          { text: '뷰프레스 만들기', link: '/blog/getting-vuepress/' },
+          { text: '드롭다운 샘플1', link: '/blog/sample1/' },
+          { text: '드롭다운 샘플2', link: '/blog/sample2/' }
         ]
       },
       { text: '타임라인', link: '/timeline/', icon: 'reco-date' },
       { text: '깃허브', link: 'https://github.com/GuSubeen', icon: 'reco-github' }
     ],
     subSidebar: 'auto', //오른쪽에 하위 사이드바 생성 
-    sidebar: {
-      '/blog/1-vue-start/': [
-        '1-installation','2-deploy','3-plugin'
-      ],
-      '/blog/2-vue-customizing/': [
-        '1-changelayout','2-comment'
-      ],
-      '/blog/3-vue-issue/': [
-        '1-issue','2-howto'
-      ]
-    },  
+    // sidebar: {
+    //   '/blog/1-vue-start/': [
+    //     '1-installation','2-deploy','3-plugin'
+    //   ]
+    // },  
+    sidebar:{
+      '/blog/getting-vuepress/': getSideBar("blog/getting-vuepress","뷰프레스 만들기")
+    },
     // type: 'blog', // 홈 형식이 블로그 형식이 됨.
     // 블로그설정
     blogConfig: {
@@ -100,3 +99,20 @@ module.exports = {
     lineNumbers: true
   }
 }  
+
+//사이드바 항목 자동화
+//출처: https://techformist.com/automatic-dynamic-sidebar-vuepress/
+function getSideBar(folder, title) {
+  const extension = [".md"];
+
+  const files = fs
+    .readdirSync(path.join(`${__dirname}/../${folder}`))
+    .filter(
+      (item) =>
+        item.toLowerCase() != "readme.md" &&
+        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
+        extension.includes(path.extname(item))
+    );
+
+  return [{ title: title, children: [ ...files] }];
+}

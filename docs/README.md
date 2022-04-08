@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: MY Blog
-tagline: reco 테마를 이용한 기술블로그 입니다.
+tagline: vuepress를 이용한 기술블로그 입니다.
 heroImage: images/main_icon.png # 메인이미지
 heroImageStyle: { # 메인이미지 스타일 수정
   #maxWidth: '600px',

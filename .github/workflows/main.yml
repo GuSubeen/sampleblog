@@ -17,7 +17,6 @@ jobs: # 이 작업을 수행한다.
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: GuSubeen/sampleblog
-        TARGET_BRANCH: main
         TARGET_BRANCH: gh-pages
         BUILD_DIR: ./public
  

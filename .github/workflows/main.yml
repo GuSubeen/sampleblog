@@ -9,14 +9,12 @@ jobs: # 이 작업을 수행한다.
     - name: Checkout
       uses: actions/checkout@v2 # 워크플로우에서 액세스할 수 있도록 저장소 체크아웃
 
-    - name: Build
+    - name: Install and Build
       run: yarn && yarn build
 
     - name: Deploy # 작업이름
       uses: JamesIves/github-pages-deploy-action@releases/v3 # 여기가 문제인 듯 하다
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: GuSubeen/sampleblog
-        TARGET_BRANCH: gh-pages
-        BUILD_DIR: ./public
+      with:
+        branch: gh-pages
+        folder: public
  

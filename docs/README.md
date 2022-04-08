@@ -17,7 +17,7 @@ bgImageStyle: {
 }
 isShowTitleInHome: false
 actionText: 눌러주세요 # 수정완료
-actionLink: /other/guide # 수정완료1
+actionLink: /blog/getting-vuepress/ # 수정완료
 features:
 - title: 안녕하세요!
   details: 구수빈입니다.

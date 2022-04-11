@@ -22,7 +22,7 @@ module.exports = {
       { text: '블로그',link: '/blog/', icon: 'reco-document',
         items: [
           { text: '뷰프레스 만들기', link: '/blog/getting-vuepress/' },
-          { text: '드롭다운 샘플1', link: '/blog/sample1/' },
+          { text: '여러가지 에러들', link: '/blog/errors-occurred/' },
           { text: '드롭다운 샘플2', link: '/blog/sample2/' }
         ]
       },
@@ -37,6 +37,7 @@ module.exports = {
     // },  
     sidebar:{
       '/blog/getting-vuepress/': getSideBar("blog/getting-vuepress","뷰프레스 만들기")
+      
     },
     // type: 'blog', // 홈 형식이 블로그 형식이 됨.
     // 블로그설정

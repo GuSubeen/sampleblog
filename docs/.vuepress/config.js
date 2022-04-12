@@ -100,22 +100,7 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true
-  }
+  },
+  plugins: ['vuepress-plugin-code-copy'] // code 복사 플러그인
 }  
 
-//사이드바 항목 자동화 -- 디렉토리를 읽어서 그 안의 파일을 반환시켜주는 코드
-//출처: https://techformist.com/automatic-dynamic-sidebar-vuepress/
-function getSideBar(folder, title) {
-  const extension = [".md"]; //확장자는 md파일임을 지정
-
-  const files = fs
-    .readdirSync(path.join(`${__dirname}/../${folder}`))
-    .filter(
-      (item) =>
-        item.toLowerCase() != "readme.md" &&
-        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
-        extension.includes(path.extname(item))
-    );
-
-  return [{ title: title, children: [ ...files] }];
-}

@@ -1,4 +1,5 @@
 //사이드바 목록 자동화
+//참고: https://techformist.com/automatic-dynamic-sidebar-vuepress/
 const fs = require("fs"); //파일시스템 처리를 위한 fs 모듈: 파일 및 폴더를 읽기/쓰기/삭제 가능
 const path = require("path"); // 파일의 경로를 다루기 위한 path 모듈
 
@@ -32,7 +33,9 @@ function getSideBar(folder) {
           extension.includes(path.extname(item))
       );   
   // 상위경로 제거
+  if(folder.includes("blog/")){
   var finalpath= folder.replace("blog/","");
+}
   // files 앞에 folder 경로 붙이기  
   let a =[];
   for(var i=0; i<files.length; i++){

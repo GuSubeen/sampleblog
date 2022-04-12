@@ -99,8 +99,11 @@ module.exports = {
     // }
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true // 포스팅한 코드에 번호붙음
   },
-  plugins: ['vuepress-plugin-code-copy'] // code 복사 플러그인
+  plugins: [
+    'vuepress-plugin-code-copy',// code 복사 플러그인
+    //'fulltext-search' // 검색기능 확장
+   ] 
 }  
 

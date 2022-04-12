@@ -1,5 +1,7 @@
-const fs = require("fs");
-const path = require("path");
+//사이드바 목록 자동화
+const fs = require("fs"); //파일시스템 처리를 위한 fs 모듈: 파일 및 폴더를 읽기/쓰기/삭제 가능
+const path = require("path"); // 파일의 경로를 다루기 위한 path 모듈
+
 module.exports = {
   base:'/sampleblog/',
   locales:{// 언어설정
@@ -19,12 +21,12 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', icon: 'reco-home' },
       { text: '게시판', link: '/notice/', icon: 'reco-tongzhi'},
-      { text: '블로그',link: '/blog/', icon: 'reco-document',
-        items: [
-          { text: '뷰프레스 만들기', link: '/blog/getting-vuepress/' },
-          { text: '여러가지 에러들', link: '/blog/errors-occurred/' },
-          { text: '드롭다운 샘플2', link: '/blog/sample2/' }
-        ]
+      { text: '블로그',link: '/blog/', icon: 'reco-document'
+        // items: [
+        //   { text: '뷰프레스 만들기', link: '/blog/getting-vuepress/' },
+        //   { text: '여러가지 에러들', link: '/blog/errors-occurred/' },
+        //   { text: '드롭다운 샘플2', link: '/blog/sample2/' }
+        // ]
       },
       { text: '타임라인', link: '/timeline/', icon: 'reco-date' },
       { text: '깃허브', link: 'https://github.com/GuSubeen', icon: 'reco-github' }
@@ -35,10 +37,10 @@ module.exports = {
     //     '1-installation','2-deploy','3-plugin'
     //   ]
     // },  
-    sidebar:{
-      '/blog/getting-vuepress/': getSideBar("blog/getting-vuepress","뷰프레스 만들기")
-      
-    },
+    sidebar:require("./sidebar"),
+    // {
+    //   '/blog/getting-vuepress/': getSideBar("blog/getting-vuepress","뷰프레스 만들기")
+    // },
     // type: 'blog', // 홈 형식이 블로그 형식이 됨.
     // 블로그설정
     blogConfig: {
@@ -101,10 +103,10 @@ module.exports = {
   }
 }  
 
-//사이드바 항목 자동화
+//사이드바 항목 자동화 -- 디렉토리를 읽어서 그 안의 파일을 반환시켜주는 코드
 //출처: https://techformist.com/automatic-dynamic-sidebar-vuepress/
 function getSideBar(folder, title) {
-  const extension = [".md"];
+  const extension = [".md"]; //확장자는 md파일임을 지정
 
   const files = fs
     .readdirSync(path.join(`${__dirname}/../${folder}`))

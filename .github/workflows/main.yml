@@ -13,7 +13,7 @@ jobs: # 이 작업을 수행한다.
       run: yarn && yarn build
 
     - name: Deploy # 작업이름
-      uses: JamesIves/github-pages-deploy-action@releases/v3 # 여기가 문제인 듯 하다
+      uses: JamesIves/github-pages-deploy-action@releases/v3 
       with:
         branch: gh-pages
         folder: public

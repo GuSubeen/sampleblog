@@ -1,4 +1,7 @@
-node_modules/
 yarn.lock
+
 yarn.error
-docs/.vuepress/theme/
+
+node_modules/
+
+deploy.sh

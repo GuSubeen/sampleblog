@@ -67,7 +67,7 @@ module.exports = {
         link: 'https://vuepress-theme-reco.recoluan.com'
       },
     ],
-    // logo: 'images/mydog.jpg', //로고
+    logo: '/mydog.jpg', //로고 - 에러수정 완료
     noFoundPageByTencent: false, // 404 에러이미지 안뜨게함.
     // 검색설정
     search: true,
@@ -104,6 +104,8 @@ module.exports = {
   plugins: [
     'vuepress-plugin-code-copy',// code 복사 플러그인
     //'fulltext-search' // 검색기능 확장
+    //["@vuepress-reco/loding-page", false] //비활성화
+    //["@vuepress-reco/plugin-nprogress",false]
    ] 
 }  
 

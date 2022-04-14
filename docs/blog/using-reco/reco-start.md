@@ -15,5 +15,3 @@ category: 구수빈
 4. vscode 열고 npx @vuepress-reco/theme-cli init
 // 여러 옵션 작성
 5. yarn install
-
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd

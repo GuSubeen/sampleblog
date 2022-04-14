@@ -4,4 +4,4 @@ yarn.error
 
 node_modules/
 
-deploy.sh
+docs/.vuepress/theme/

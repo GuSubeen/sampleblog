@@ -1,10 +1,10 @@
 ---
-title: 댓글기능 달기
-date: 2022-03-23
+title: 댓글기능 추가하기
+date: 2022-04-13
 tags:
- - 태그2
-categories: 
- - 구수빈
+ - 커스터마이징
+author: 구수빈
+categories: 구수빈
 ---
 utterance는 깃허브 계정만 있으면 댓글을 달 수 있으며, 댓글은 모두 연결된 github issue에 저장된다.
 

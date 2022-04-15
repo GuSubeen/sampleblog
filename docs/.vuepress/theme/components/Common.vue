@@ -1,9 +1,9 @@
 <template>
   <div class="theme-container" :class="pageClasses">
     <div v-if="!absoluteEncryption">
-      <transition name="fade">
+      <!-- <transition name="fade">
         <LoadingPage v-show="firstLoad" class="loading-wrapper" />
-      </transition>
+      </transition> 로딩페이지 비활성화-->
 
       <transition name="fade">
         <Password v-show="!firstLoad && !isHasKey" class="password-wrapper-out" key="out" />

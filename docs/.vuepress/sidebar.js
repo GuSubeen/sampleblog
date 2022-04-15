@@ -5,19 +5,34 @@ const path = require("path"); // 파일의 경로를 다루기 위한 path 모�
 
 module.exports={
 '/blog/': [
+    '',
     {
-      title: "뷰프레스 만들기",
+      title: "뷰프레스 시작하기",
+      //collapsable: false,
+      children: getSideBar("blog/1-getting-start")
+    },
+    {
+      title: "뷰프레스 꾸미기",
+      //collapsable: false,
+      children: getSideBar("blog/2-customizing")
+    },
+    {
+      title: "기능 추가하기",
+      collapsable: false,
+      children: getSideBar("blog/3-addFunction")
+    },
+    {
+      title: "추가 작업들",
+      collapsable: false,
+      children: getSideBar("blog/4-additionalWork")
+    },
+    {
+      title: "샘플",
+      collapsable: false,
       children: getSideBar("blog/getting-vuepress")
               //'getting-vuepress/1-installation','getting-vuepress/2-deploy'
-    },
-    {
-      title: "오류잡기",
-      children: getSideBar("blog/errors-occurred")
-    },
-    {
-      title: "샘플2",
-      children: getSideBar("blog/using-reco")
     }
+
   ]
 }
 

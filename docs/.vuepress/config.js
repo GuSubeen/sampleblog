@@ -16,19 +16,19 @@ module.exports = {
     ['link', { rel: 'icon', href: 'images/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
-  //theme: path.resolve(__dirname,'./theme/vuepress-theme-reco'),
+  //theme: 'reco',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: '게시판', link: '/notice/', icon: 'reco-tongzhi'},
-      { text: '블로그',link: '/blog/', icon: 'reco-document'
+      { text: 'Home', link: '/', /*icon: 'reco-home'*/ },
+      { text: '게시판', link: '/notice/', /*icon: 'reco-tongzhi'*/},
+      { text: '블로그',link: '/blog/', /*icon: 'reco-document'*/
         // items: [
         //   { text: '뷰프레스 만들기', link: '/blog/getting-vuepress/' },
         //   { text: '여러가지 에러들', link: '/blog/errors-occurred/' },
         //   { text: '드롭다운 샘플2', link: '/blog/sample2/' }
         // ]
       },
-      { text: '타임라인', link: '/timeline/', icon: 'reco-date' },
+      { text: '타임라인', link: '/timeline/', /*icon: 'reco-date'*/ },
       { text: '깃허브', link: 'https://github.com/GuSubeen', icon: 'reco-github' }
     ],
     subSidebar: 'auto', //오른쪽에 하위 사이드바 생성 
@@ -76,7 +76,7 @@ module.exports = {
     lastUpdated: 'Last Updated', // 마지막 업데이트 시간
     // 작성자
     author: '구수빈', // 여기는 글로벌 작성자, 페이지별 다른 작성자도 가능함
-    authorAvatar: 'images/avatar.png', // 작성자 프로필 이미지, 블로그 타입시 표시됨
+    authorAvatar: '/images/subeen.jpg', // 작성자 프로필 이미지, 화면 축소시 메뉴바 누르면 보임
     record: '1234', // 등록번호, footer 표시
     
     startYear: '2022' // 프로젝트 기간, footer 표시

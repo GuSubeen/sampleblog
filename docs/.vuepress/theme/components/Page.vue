@@ -6,7 +6,7 @@
           <h1 class="title">{{$page.title}}</h1>
           <PageInfo :pageInfo="$page" :showAccessNumber="showAccessNumber"></PageInfo>
         </div>
-        <!-- 这里使用 v-show，否则影响 SSR -->
+        <!-- v-show 사용지 않으면 SSR에 영향을 준다 -->
         <Content class="theme-reco-content" />
       </section>
     </ModuleTransition>
@@ -68,7 +68,7 @@ import SubSidebar from '@theme/components/SubSidebar'
 import { useInstance } from '@theme/helpers/composable'
 
 export default defineComponent({
-  components: { PageInfo, ModuleTransition, SubSidebar },
+  components: { PageInfo, ModuleTransition, SubSidebar},
 
   props: ['sidebarItems'],
 

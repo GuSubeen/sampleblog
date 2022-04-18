@@ -18,7 +18,6 @@ module.exports = {
   ],
   //theme: 'reco',
   themeConfig: {
-
     nav: [
       { text: 'Home', link: '/', /*icon: 'reco-home'*/ },
       { text: '게시판', link: '/notice/', /*icon: 'reco-tongzhi'*/},

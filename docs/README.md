@@ -17,6 +17,7 @@ bgImageStyle: {
 }
 isShowTitleInHome: false
 actionText: 눌러주세요 # 수정완료
+
 actionLink: /blog/getting-vuepress/ # 수정완료
 features:
 - title: 안녕하세요!

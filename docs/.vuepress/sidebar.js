@@ -5,7 +5,7 @@ const path = require("path"); // 파일의 경로를 다루기 위한 path 모�
 
 module.exports={
 '/blog/': [
-    '',
+    //'',
     {
       title: "뷰프레스 시작하기",
       //collapsable: false,

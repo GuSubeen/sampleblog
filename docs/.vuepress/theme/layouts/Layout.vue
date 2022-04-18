@@ -19,7 +19,7 @@ import { useInstance } from '@theme/helpers/composable'
 
 export default defineComponent({
   mixins: [moduleTransitonMixin],
-  components: { HomeBlog, Home, Page, Common, Footer },
+  components: { HomeBlog, Home, Page, Common, Footer},
   setup (props, ctx) {
     const instance = useInstance()
 

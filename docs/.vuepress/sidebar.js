@@ -25,14 +25,13 @@ module.exports={
       title: "추가 작업들",
       collapsable: false,
       children: getSideBar("blog/4-additionalWork")
-    },
-    {
-      title: "샘플",
-      collapsable: false,
-      children: getSideBar("blog/getting-vuepress")
-              //'getting-vuepress/1-installation','getting-vuepress/2-deploy'
     }
-
+    // {
+    //   title: "샘플",
+    //   collapsable: false,
+    //   children: getSideBar("blog/getting-vuepress")
+    //           //'getting-vuepress/1-installation','getting-vuepress/2-deploy'
+    // }
   ]
 }
 

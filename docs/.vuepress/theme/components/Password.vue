@@ -4,11 +4,11 @@
       <h3 v-show="recoShowModule" class="title">{{isPage ? $frontmatter.title : $site.title || $localeConfig.title}}</h3>
     </ModuleTransition>
 
-    <ModuleTransition delay="0.08">
+    <ModuleTransition> <!--delay="0.08"> -->
       <p class="description" v-if="recoShowModule && !isPage">{{$site.description || $localeConfig.description}}</p>
     </ModuleTransition>
 
-    <ModuleTransition delay="0.16">
+    <ModuleTransition> <!--delay="0.16"> -->
       <label v-show="recoShowModule" class="inputBox" id="box">
         <input
           v-model="key"
@@ -21,7 +21,7 @@
       </label>
     </ModuleTransition>
 
-    <ModuleTransition delay="0.24">
+    <ModuleTransition> <!--delay="0.24"> -->
       <div v-show="recoShowModule" class="footer">
         <span>
           <reco-icon icon="reco-theme" />

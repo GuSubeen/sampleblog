@@ -12,13 +12,13 @@
           />
         </ModuleTransition>
 
-        <ModuleTransition delay="0.04">
+        <ModuleTransition> <!--delay="0.04"> -->
           <h1 v-if="recoShowModule && $frontmatter.heroText !== null">
             {{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}
           </h1>
         </ModuleTransition>
 
-        <ModuleTransition delay="0.08">
+        <ModuleTransition> <!--delay="0.08"> -->
           <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description">
             {{ $frontmatter.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}
           </p>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <ModuleTransition delay="0.16">
+    <ModuleTransition> <!--delay="0.16"> -->
       <div v-show="recoShowModule" class="home-blog-wrapper">
         <div class="blog-list">
           <!-- 博客列表 -->
@@ -52,7 +52,7 @@
       </div>
     </ModuleTransition>
 
-    <ModuleTransition delay="0.24">
+    <ModuleTransition> <!--delay="0.24"> -->
       <Content v-show="recoShowModule" class="home-center" custom/>
     </ModuleTransition>
   </div>

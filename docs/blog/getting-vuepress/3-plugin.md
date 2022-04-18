@@ -84,4 +84,3 @@ plugins: [
 - [limdongjin : Tutorial :: Vuepress로 기술문서 빠르게 만들어보자!](https://limdongjin.github.io/vuejs/vuepress/#install)
 - [기억보다 기록을 : vuePress plugin 사용법](https://kyounghwan01.github.io/blog/Vue/vuepress/vuepress-plugin/)
 
-<comment/>

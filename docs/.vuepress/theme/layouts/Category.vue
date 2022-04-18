@@ -18,7 +18,7 @@
     </ModuleTransition>
 
     <!-- 博客列表 -->
-    <ModuleTransition delay="0.08">
+    <ModuleTransition> <!--delay="0.08"> -->
       <note-abstract
         v-show="recoShowModule"
         class="list"

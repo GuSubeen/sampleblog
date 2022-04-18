@@ -13,7 +13,7 @@ module.exports = {
   description: 'A simple and beautiful vuepress blog theme .', //로딩중 뜨는 문장
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: 'images/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   //theme: 'reco',

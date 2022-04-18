@@ -8,4 +8,3 @@ utterances 댓글 시스템을 활용한 의견게시판입니다.
 github 로그인이 필요합니다.
 :::
 
-<comment/>
